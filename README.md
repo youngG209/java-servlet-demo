@@ -58,3 +58,11 @@ Study Spring MVC (Servlet)
 ### 2부. 스프링 MVC 설정
 1. 스프링 MVC 구성 요소 직접 빈으로 등록하기
     1) @Configuration을 사용한 자바 설정 파일에 직접 @Bean을 사용해서 등록하기 (WebConfig.java / Line. 12)
+
+2. @EnableWebMvc
+    1) 어노테이션 기반 스프링 MVC 사용할 때 편리한 웹 MVC 기본 설정 
+       * DispatcherServlet이 스프링 컨테이너를 생성하기 위해선 입력으로 받는 설정 클래스에는 HandlerMapping 빈과 HandlerAdapter 빈이 등록되어있어야 한다. 하지만 설정 클래스에 @EnableWebMvc 애노테이션을 추가해주면 해당 빈을 자동으로 추가해준다.
+
+3. WebMvcConfigurer 인터페이스
+    1) @EnableWebMvc가 제공하는 빈을 커스터마이징할 수 있는 기능을 제공하는 인터페이스
+    
