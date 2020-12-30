@@ -1,6 +1,7 @@
 # java-servlet-demo
 Study Spring MVC (Servlet)
 
+### 1부. 스프링 MVC 동작 원리
 1. DispatcherServlet 동작 원리
     1) @ResponseBody : Converter를 사용하여 응답 본문을 만듬 (ex. Ajax)
        * HelloController.java / Line. 15
@@ -54,3 +55,6 @@ Study Spring MVC (Servlet)
         2) 스프링 부트의 주관에 따라 여러 인터페이스 구현체를 빈으로 등록한다.
            
             
+### 2부. 스프링 MVC 설정
+1. 스프링 MVC 구성 요소 직접 빈으로 등록하기
+    1) @Configuration을 사용한 자바 설정 파일에 직접 @Bean을 사용해서 등록하기 (WebConfig.java / Line. 12)
